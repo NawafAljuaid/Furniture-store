@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  color: #343a40;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.container {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.header {
+  position: fixed;
+  top: -5px;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 9.6rem;
+  padding: 0 7.8rem;
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 15rem;
+}
+
+.logo {
+  font-size: 3.2rem;
+  color: #343a40;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #087f5b;
+}
+
+.main-nav {
+  display: flex;
+  gap: 8rem;
+  list-style: none;
+  position: relative;
+}
+
+.list-nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.list-nav a::after {
+  content: "";
+  width: 20%;
+  height: 1.5px;
+  background-color: #099268;
+  position: absolute;
+  bottom: -0.8rem;
+  right: -0.25rem;
+  transition: 0.3s;
+}
+
+.list-nav a:hover {
+  color: #099268;
+}
+
+.list-nav a:hover::after {
+  width: 40%;
+}
+
+/* Hero section */
+
+section {
+  margin-bottom: 9.6rem;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btnactive {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+}
+
+.btn--small {
+  font-size: 1.4rem;
+  padding: 0.8px 1.2rem;
+}
+
+img {
+  border-radius: 12px;
+}
+
+/* COMPONENT STYLES */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15rem;
+
+  margin-top: 6.4rem;
+}
+
+.hero-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 3.2rem;
+  font-size: 3.8rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 4.8rem;
+  font-size: 3.6rem;
+}
+
+.hero-text {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+
+.features-icon {
+  stroke: #087f5b;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.features-title {
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.features-text {
+  font-size: 1.8rem;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 2.4rem;
+  border-radius: 12px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+.testimonial-box h2 {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+}
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
+}
+
+/* Chair */
+
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.chair-box {
+  padding: 1rem 2rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  text-align: center;
+  color: #087f5b;
+}
+
+.chair-price {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.old-price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #999;
+  text-decoration: line-through;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 1.6rem;
+  color: #495057;
+}
